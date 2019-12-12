@@ -4,6 +4,7 @@ import TopBanner from "./top_banner.js";
 import LeftBanner from "./left_banner.js";
 import ToggleAnimations from "./toggle_animation.js";
 import TitleText from "./title_text";
+import Column from "./column";
 
 ReactDOM.render(
     <TopBanner/>,
@@ -23,4 +24,9 @@ ReactDOM.render(
 ReactDOM.render(
     <TitleText/>,
     document.getElementById("title_text_div")
+);
+
+ReactDOM.render(
+      <Column/>,
+      document.getElementById("column_div")
 );

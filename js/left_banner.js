@@ -5,7 +5,7 @@ export default class LeftBanner extends React.Component {
          return (
              <div style={{height: "100%", width: "100%"}}>
                  <svg style={{height: "100%", width: "100%"}} viewBox={"0 0 100 100"} preserveAspectRatio={"none"}>
-                     <polygon id={"left_banner_polygon"} points={"0 0 100 0 100 80 0 90"} fill={"red"}/>
+                     <polygon id={"left_banner_polygon"} points={"0 0 100 0 100 80 0 90"} fill={"#464646"}/>
                  </svg>
              </div>
          )

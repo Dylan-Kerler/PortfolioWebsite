@@ -6,9 +6,7 @@
 }
 
 .toggle_animation_span {
-    position: absolute;
     margin-left: 15px;
-    bottom: 0;
     overflow: visible;
 }
 
@@ -17,7 +15,6 @@
 }
 
 .toggle_animation_text {
-    color: white;
     font-size: 10px;
     padding-right: 10px;
 }

@@ -17,12 +17,12 @@ const ToggleSwitch = withStyles({
         padding: 1,
         color: purple[300],
         '&$checked': {
-            color: purple[500],
-            transform: 'translateX(7px)',
+            color: "#252528",
+            transform: 'translateX(8px)',
             '& + $track': {
                 opacity: 1,
-                backgroundColor: red[400],
-                borderColor: red[200],
+                backgroundColor: "#7DFF88",
+                borderColor: "#7DFF88",
             },
         },
     },
@@ -35,7 +35,7 @@ const ToggleSwitch = withStyles({
         border: `1px solid ${purple[300][500]}`,
         borderRadius: 16 / 2,
         opacity: 1,
-        backgroundColor: purple[300],
+        backgroundColor: "#252528",
     },
     checked: {}
 })(Switch);

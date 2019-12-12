@@ -1,4 +1,77 @@
+@-webkit-keyframes move_in {
+    from { width: 95%; }
+    to { width: 90%; }
+}
+
+.title_component_div {
+    margin-top: 12%;
+    -webkit-animation: move_in 1s forwards;
+    animation: move_in 1s forwards;
+    text-align: left;
+    float: right;
+}
+
 .hello {
-    color: white;
-    font-family: "Arial Black";
+    margin-left: 5px;
+    margin-bottom: -15px;
+    padding: 0px;
+    font-size: 21px;
+}
+
+.name {
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+}
+
+.summary_div {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    margin-left: 5px;
+}
+.blurb_title {
+    padding-top: 15px;
+}
+
+.blurb_title > b {
+    color: #7DFF88;
+}
+
+.summary_div > h3 {
+    font-size: 12px;
+    margin: 0px;
+}
+
+.title_component_div > button {
+    background: none;
+    font-size: 14px;
+    color: #7DFF88;
+    margin-top: 30px;
+    font-family: Arial-Black, Arial;
+    border: 1px solid #7DFF88;
+    border-radius: 10px;
+    height: 45px;
+}
+
+@-webkit-keyframes color_change {
+    from { color: #7DFF88; background-color: none; }
+    to { color: #222123; background-color: #7DFF88; }
+}
+
+.title_component_div > button:hover {
+    -webkit-animation: color_change 0.5s forwards; /* Forwards so the animation stays persistent */
+    animation: color_change 0.5s forwards;
+    cursor: pointer;
+}
+
+.want_to_hire_button {
+    margin-right: 20px;
+    width: 180px;
+}
+
+.about_button {
+    width: 120px;
 }
