@@ -1,0 +1,24 @@
+.toggle_animation_grid_container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: visible;
+}
+
+.toggle_animation_span {
+    position: absolute;
+    margin-left: 15px;
+    bottom: 0;
+    overflow: visible;
+}
+
+.toggle_animation_span > * {
+    display: inline-block;
+}
+
+.toggle_animation_text {
+    color: white;
+    font-size: 10px;
+    padding-right: 10px;
+}
+

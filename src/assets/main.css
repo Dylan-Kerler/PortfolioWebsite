@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+    font-family: "Arial Black", Arial;
+    font-weight: 900;
+}
+
+.background {
+    background-color: #222123;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 32fr 12fr 2fr;
+    grid-template-rows: 1fr 1fr 9fr;
+    min-height: 0;  /* Prevent grids from expanding to the largest element inside */
+    min-width: 0;   /* Prevent grids from expanding to the largest element inside */
+    grid-template-areas:
+        "banner         banner          banner          banner"
+        "left_banner    toggle_an       column_a        right_buffer"
+        "left_banner    title_txt       column_a        right_buffer";
+}
+
+#top_grey_banner_div {
+    grid-area: banner;
+    border-style: dashed;
+    border-color: grey;
+    overflow: hidden;
+    min-width: 0;
+}
+
+#left_grey_banner_div {
+    grid-area: left_banner;
+    border-style: dashed;
+    border-color: grey;
+    overflow: hidden;
+    min-width: 0;
+}
+
+#toggle_animation_div {
+    grid-area: toggle_an;
+    border-style: dashed;
+    border-color: grey;
+    overflow: hidden;
+    min-width: 0;
+    min-height: 0;
+}
+
+#title_text_div {
+    grid-area: title_txt;
+    border-style: dashed;
+    border-color: grey;
+    overflow: hidden;
+    min-width: 0;
+    min-height: 0;
+}
+
+#column_div {
+    grid-area: column_a;
+    grid-row-start: 1; /* make column overlap banner */
+    z-index: 1; /* make extra sure column is overlapping banner */
+    border-style: dashed;
+    border-color: grey;
+    overflow: hidden;
+    min-width: 0;
+    min-height: 0;
+}
+
+#right_buffer_div {
+    grid-area: right_buffer;
+    border-style: dashed;
+    border-color: grey;
+    overflow: hidden;
+    min-width: 0;
+    min-height: 0;
+}
