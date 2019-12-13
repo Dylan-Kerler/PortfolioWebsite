@@ -75,3 +75,102 @@
 .about_button {
     width: 120px;
 }
+
+/* About me div */
+.full_size_div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: none;
+}
+
+.close_button_about_me {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    float: right;
+    color: #7DFF88;
+}
+
+.about_me_div {
+    background-color: #2E2E2E;
+    height: 70%;
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.about_me_text_div {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_me_sub_text {
+    overflow: scroll;
+    flex-grow: 1;
+    display: grid;
+    padding-right: 30px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "languages      social"
+        "tech_stack     tech_stack"
+        "more           more"
+    ;
+}
+
+.about_me_sub_text > div > h2 {
+    color: white;
+    font-size: 25px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.about_me_sub_text > div > ul {
+    list-style-type: none;
+    float: left;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.about_me_sub_text > div > ul >  li {
+    margin-bottom: 5px;
+    font-size: 15px;
+    margin-left: 1px;
+}
+
+.languages_div {
+    grid-area: languages;
+}
+
+.social_div {
+    grid-area: social;
+}
+
+.social_div > div {
+    float: right;
+}
+
+.tech_stack_div {
+    grid-area: tech_stack;
+}
+
+.more_div {
+    grid-area: more;
+}
+
+.about_me_div > * > h1 {
+    color: #7DFF88;
+    font-size: 70px;
+    margin: 0 0 0px -10px;
+    padding: 0;
+}
