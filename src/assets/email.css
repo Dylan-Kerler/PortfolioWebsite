@@ -1,0 +1,109 @@
+.full_size_div_email {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.email_div {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    background-color: #2E2E2E;
+    border-radius: 10px;
+    padding: 20px 30px 20px 30px;
+    margin: 15% 0 0 0;
+    grid-template-areas:
+        "email_title        close_button"
+        "email_text_div     email_text_div"
+        "email_sub_text     email_sub_text"
+    ;
+}
+
+.close_email_button:hover {
+    color: #7DFF88;
+    cursor: pointer;
+}
+
+.close_email_button {
+    grid-area: close_button;
+    margin: 0;
+    padding: 0;
+    float: right;
+    font-size: 12px;
+
+    /* need to add these because :hover behaviour on float:right doesnt
+    work otherwise... Weird! */
+    position: relative;
+    z-index: 2;
+}
+
+.email_div > h1 {
+    grid-area: email_title;
+    color: #7DFF88;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.email_text_div:hover {
+    cursor: pointer;
+}
+
+.email_text_div {
+    grid-area: email_text_div;
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+    background-color: #222123;
+    border-radius: 5px;
+    text-align: left;
+    padding: 15px;
+}
+
+.email_text_div > p {
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.email_text {
+    font-size: 30px;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.copy_email_text {
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.copy_email_text:hover {
+    color: #7DFF88;
+}
+
+.email_sub_text {
+    font-size: 12px;
+}
+
+@keyframes copy_to_clipboard_in {
+    from { bottom: 0px; opacity: 0;}
+    to {bottom: -40px; opacity: 1;}
+}
+
+.copied_to_clipboard_div {
+    animation: copy_to_clipboard_in 0.5s forwards;
+    position: absolute;
+    right: 10px;
+    bottom: -40px;
+    color: #7DFF88;
+    padding: 8px;
+    border: 1px solid #7DFF88;
+    font-size: 12px;
+}
+
+.copied_to_clipboard_div > p {
+    margin: 0px;
+    padding: 0px;
+}

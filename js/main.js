@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 import TopBanner from "./top_banner.js";
 import LeftBanner from "./left_banner.js";
 import ToggleAnimations from "./toggle_animation.js";
-import TitleText from "./title_text";
+import TitleText from "./title_text/title_text";
 import Column from "./column";
 
 ReactDOM.render(
@@ -21,8 +21,15 @@ ReactDOM.render(
     document.getElementById("toggle_animation_div")
 );
 
+const textInfo = {
+    languages: ["Javascript HTML5/CSS3", "Go", "Rust", "C/C++", "Python", "Solidity"],
+    socials: ["Github", "LinkedIn", "Email"],
+    programmingStacks: ["React.js", "MongoDB", "ES6", "Socket.io", "NodeJS", "Express", "JQuery", "Tokio-rs", "Blockchain"],
+    devopsStacks: ["Linux (Redhat, Debian)", "Kubernetes", "Docker", "Digital Ocean", "AWS (Amazon Web Service)"]
+};
+
 ReactDOM.render(
-    <TitleText/>,
+    <TitleText />,
     document.getElementById("title_text_div")
 );
 

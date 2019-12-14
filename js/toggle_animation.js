@@ -1,11 +1,7 @@
 import React from "react";
 import { withStyles } from '@material-ui/core/styles';
-import { purple, red } from '@material-ui/core/colors';
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+import { purple } from '@material-ui/core/colors';
 import Switch from '@material-ui/core/Switch';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
 
 const ToggleSwitch = withStyles({
     root: {
@@ -41,7 +37,6 @@ const ToggleSwitch = withStyles({
 })(Switch);
 
 export default class ToggleAnimations extends React.Component {
-
     render() {
         return (
             <div style={{height: "100%", width: "100%"}}>
@@ -54,5 +49,4 @@ export default class ToggleAnimations extends React.Component {
             </div>
         )
     }
-
 }
