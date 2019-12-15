@@ -4,7 +4,7 @@ import TopBanner from "./top_banner.js";
 import LeftBanner from "./left_banner.js";
 import ToggleAnimations from "./toggle_animation.js";
 import TitleText from "./title_text/title_text";
-import Column from "./column";
+import Column from "./column/column";
 
 ReactDOM.render(
     <TopBanner/>,
@@ -29,7 +29,7 @@ const textInfo = {
 };
 
 ReactDOM.render(
-    <TitleText />,
+    <TitleText textInfo={textInfo} />,
     document.getElementById("title_text_div")
 );
 

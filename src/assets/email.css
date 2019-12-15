@@ -8,6 +8,9 @@
 }
 
 .email_div {
+    -webkit-box-shadow: 0px 0px 150px 144px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 150px 144px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 150px 144px rgba(0,0,0,0.75);
     display: inline-block;
     height: auto;
     position: relative;
@@ -58,7 +61,7 @@
     padding: 0;
     background-color: #222123;
     border-radius: 5px;
-    text-align: left;
+    text-align: center;
     padding: 15px;
 }
 
@@ -84,6 +87,8 @@
 }
 
 .email_sub_text {
+    padding-top: 5px;
+    margin-top: 10px;
     font-size: 12px;
 }
 

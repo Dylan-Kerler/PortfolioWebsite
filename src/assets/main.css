@@ -92,6 +92,8 @@ button:focus {outline:0;}
     grid-row-start: 1; /* make column overlap banner */
     z-index: 1; /* make extra sure column is overlapping banner */
     overflow: hidden;
+    margin: 0px;
+    padding: 0px;
     min-width: 0;
     min-height: 0;
 }
