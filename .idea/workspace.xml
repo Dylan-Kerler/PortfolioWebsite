@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="408b5fee-e99f-441c-95a1-66b497646c5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/redux_store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/column/column.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/column/column.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/column/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/column/project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/title_text/about_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/title_text/about_me.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/title_text/title_text.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/title_text/title_text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/toggle_animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/toggle_animation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/column.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/column.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/email.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/email.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/title_text.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/title_text.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/toggle_animation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/toggle_animation.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +111,7 @@
       <workItem from="1576340729563" duration="11280000" />
       <workItem from="1576416679327" duration="18053000" />
       <workItem from="1576494057187" duration="13922000" />
-      <workItem from="1576579406700" duration="11062000" />
+      <workItem from="1576579406700" duration="11700000" />
     </task>
     <servers />
   </component>
