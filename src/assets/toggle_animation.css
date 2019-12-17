@@ -19,3 +19,28 @@
     padding-right: 10px;
 }
 
+.language_div {
+    height: 100%;
+    float: right;
+    font-size: 10px;
+    margin-right: 30px;
+}
+
+.language_div > select,
+.language_div > select > option {
+    float: right;
+    background: black;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+.language_div > select:hover {
+    cursor: pointer;
+}
+
+.language_div > select:focus {
+    outline: 0;
+}
+
+

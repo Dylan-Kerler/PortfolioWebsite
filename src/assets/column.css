@@ -25,8 +25,19 @@
     margin: 25px 25px 25px 25px;
 }
 
+.project_div:hover .read_more {
+    color: #7DFF88;
+}
+@keyframes project_focus {
+    from { margin: 25px 25px 25px 25px; }
+    to { margin: 25px 15px 15px 15px; }
+}
+.project_div:hover {
+    animation: project_focus 0.1s forwards;
+    cursor: pointer;
+}
+
 .wrapper {
-    height: 100%;
     width: 100%;
     position: relative;
 }
@@ -34,6 +45,26 @@
 .javascript_project {
     padding: 0;
     border-top: 2px solid yellow;
+}
+
+.rust_project {
+    padding: 0;
+    border-top: 2px solid #dea584;
+}
+
+.go_project {
+    padding: 0;
+    border-top: 2px solid #00ADD8;
+}
+
+.cplusplus_project {
+    padding: 0;
+    border-top: 2px solid #f34b7d;
+}
+
+.solidity_project {
+    padding: 0;
+    border-top: 2px solid #AA6746;
 }
 
 .project_title {
@@ -55,21 +86,16 @@
     cursor: pointer;
 }
 
-
 .project_text {
     grid-area: project_text;
     margin: 3px 15px 3px 15px;
     padding: 0;
 }
+
 .read_more {
     grid-area: read_more;
     text-align: right;
-    color: #7DFF88;
+    color: rgba(125, 255, 136, 0.5);;
     margin: 0 15px 15px 0;
     padding: 0;
-}
-
-.read_more:hover {
-    cursor: pointer;
-    color: rgba(125, 255, 136, 0.7);
 }

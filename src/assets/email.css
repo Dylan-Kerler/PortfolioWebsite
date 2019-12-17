@@ -5,6 +5,7 @@
     top: 0;
     margin-left: 0;
     margin-top: 0;
+    z-index: 5;
 }
 
 .email_div {
@@ -23,6 +24,7 @@
         "email_text_div     email_text_div"
         "email_sub_text     email_sub_text"
     ;
+    z-index: 6;
 }
 
 .close_email_button:hover {

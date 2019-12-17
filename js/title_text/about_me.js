@@ -12,7 +12,12 @@ const LanguageList = (props) => {
 
 const SocialList = (props) => {
     const arrSocials = props.socials;
-    const socials = arrSocials.map((social, index) => <li key={index}>{social}</li>);
+    const socials = arrSocials.map((social, index) => {
+        if (social.name === "Email") {
+            return <li key={index} onClick={props.toggleEmailClose}>{social.name}</li>
+        }
+        return <li key={index}><a href={social.link}>{social.name}</a></li>
+    });
     return (
         <ul>
             {socials}
@@ -68,7 +73,7 @@ export default class AboutMe extends React.Component {
                             <div className="social_div">
                                 <div>
                                     <h2>Social</h2>
-                                    <SocialList socials={this.props.textInfo.socials}/>
+                                    <SocialList toggleEmailClose={this.props.toggleEmailClose} socials={this.props.textInfo.socials}/>
                                 </div>
                             </div>
 
