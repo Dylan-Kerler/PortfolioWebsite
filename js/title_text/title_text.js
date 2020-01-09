@@ -1,6 +1,7 @@
 import React from "react"
 import AboutMe from "./about_me";
 import EmailBox from "./email_box";
+import FeaturedProject from "./featured_project";
 
 export default class TitleText extends React.Component {
     constructor(props) {
@@ -50,6 +51,7 @@ export default class TitleText extends React.Component {
                 { this.state.isEmailBoxClicked ?
                     <EmailBox toggleClose={this.toggleEmailBox}/> :
                         null }
+                <FeaturedProject/>
             </div>
         )
     }

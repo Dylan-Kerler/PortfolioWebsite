@@ -13,7 +13,7 @@
 
 .hello {
     margin-left: 5px;
-    margin-bottom: -15px;
+    margin-bottom: -5px;
     padding: 0px;
     font-size: 21px;
 }
@@ -198,4 +198,43 @@
     font-size: 50px;
     margin: 0 0 10px -5px;
     padding: 0;
+}
+
+.featured_project {
+    background-color: black;
+    display: grid;
+    grid-template-areas:
+            "title          github"
+            "project_text   project_text"
+            ".              read_more"
+    ;
+    border-radius: 10px;
+    width: 350px;
+    font-size: 10px;
+}
+
+.featured_project:hover .read_more {
+    color: #7DFF88;
+}
+
+@keyframes project_focus {
+    from { margin: 25px 25px 25px 25px; }
+    to { margin: 25px 15px 15px 15px; }
+}
+
+.featured_project:hover {
+    cursor: pointer;
+}
+
+.featured_project_div {
+    float: right;
+    margin-right: 30px;
+    margin-top: 60px;
+}
+
+.featured_project_div >h3 {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
 }

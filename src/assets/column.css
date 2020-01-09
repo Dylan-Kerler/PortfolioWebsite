@@ -4,6 +4,7 @@
     margin: 0;
     overflow: hidden;
     font-size: 10px;
+    max-width: 400px;
 }
 
 .project_container_div {
@@ -28,6 +29,7 @@
 .project_div:hover .read_more {
     color: #7DFF88;
 }
+
 @keyframes project_focus {
     from { margin: 25px 25px 25px 25px; }
     to { margin: 25px 15px 15px 15px; }
@@ -81,7 +83,7 @@
     font-size: 15px;
 }
 
-.project_github:hover {
+.project_github > a:hover {
     color: #7DFF88;
     cursor: pointer;
 }

@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-    entry: ["webpack/hot/dev-server", "./js/main.js"],
+    entry: "./js/main.js",
     module: {
         rules: [
             { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader", query: {presets:['@babel/react', "@babel/env"]}}

@@ -13,6 +13,7 @@ export default class Project extends React.Component {
 
         this.handleStoreUpdate = this.handleStoreUpdate.bind(this);
         this.initialiseAnimations = this.initialiseAnimations.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -47,6 +48,10 @@ export default class Project extends React.Component {
         this.setState({ showAnimations });
     }
 
+    handleClick() {
+        window.open(this.props.project.github)
+    }
+
     initialiseAnimations() {
         const this_item = document.getElementById(this.props.id);
         const item_info = this_item.getBoundingClientRect();
@@ -67,13 +72,14 @@ export default class Project extends React.Component {
     }
 
     render() {
-        return ( this.props.project.language === Store.getState().language || Store.getState().language === "all" ?
-            <div className={"project_div " + this.props.project.language + "_project" + " "} id={this.props.id}>
-                <h3 className="project_title">{this.props.project.title}</h3><h3 className="project_github"><a href={this.props.project.github}>Github</a></h3>
-                <p className="project_text">{this.props.project.projectText}</p>
-                <p className="read_more">Read more...</p>
-            </div> :
-                <div id={this.props.id}></div>
+        return (
+            this.props.project.language === Store.getState().language || Store.getState().language === "all" ?
+                <div className={"project_div " + this.props.project.language + "_project" + " "} id={this.props.id} onClick={this.handleClick}>
+                    <h3 className="project_title">{this.props.project.title}</h3><h3 className="project_github"><a href={this.props.project.github}>Github</a></h3>
+                    <p className="project_text">{this.props.project.projectText}</p>
+                    <p className="read_more">Read more...</p>
+                </div> :
+                    <div id={this.props.id}></div>
         )
     }
 }
