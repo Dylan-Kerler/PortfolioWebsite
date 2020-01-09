@@ -1,10 +1,10 @@
 const express = require('express');
-const port = 3000;
 const app = express();
 const path = require("path");
 
-app.use('/', express.static(path.join(__dirname, "src", "assets")));
-app.use('/', express.static(path.join(__dirname, "src", "public")));
+const port = process.env.PORT ? process.env.PORT : 3000;
+
+app.use('/', express.static(path.join(__dirname, "src")));
 
 app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, "src", "index.html"));
